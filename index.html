@@ -1,30 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Javascript landing page</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
-</head>
-<body>
-     <header>
-        <div class="nav-bar">
-            <a href="" class="logo">Logo</a>
-            <div class="navigation">
-                <div class="nav-items">
-                    <i class="uil uil-times nav-close-btn"></i>
-                    <a href="#"><i class="uil uil-home">Home</i></a>
-                    <a href="#"><i class="uil uil-compass">Explore</i></a>
-                    <a href="#"><i class="uil uil-info-circle">About</i></a>
-                    <a href="#"><i class="uil uil-document-layout-left">Blog</i></a>
-                    <a href="#"><i class="uil uil-envelope">Contact</i></a>
-                </div>
-            </div>
-            <i class="uil uil-apps nav-menu-btn"></i>
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.8/css/line.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="nav-bar">
+        <a href="" class="logo">Manik</a>
+        <div class="navigation">
+          <div class="nav-items">
+            <i class="uil uil-times nav-close-btn"></i>
+            <a href="#"><i class="uil uil-home"></i>Home</a>
+            <a href="#"><i class="uil uil-compass"></i>Explore</a>
+            <a href="#"><i class="uil uil-info-circle"></i>About</a>
+            <a href="#"><i class="uil uil-document-layout-left"></i>Blog</a>
+            <a href="#"><i class="uil uil-envelope"></i>Contact</a>
+          </div>
         </div>
-     </header>
-    <script src="script.js"></script>
-</body>
+        <i class="uil uil-apps nav-menu-btn"></i>
+      </div>
+    </header>
+
+    <section class="home">
+      <div class="swiper bg-slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="img/slider-2-img.jpg" alt="" />
+            <div class="text-content">
+              <h2 class="title">Autumn <span>Seasion</span></h2>
+              <p>
+                Autumn, a season of transition, brings a visual spectacle as
+                trees shed vibrant leaves in hues of red, orange, and yellow.
+                The air turns crisp, prompting a shift to cozy wardrobes
+                featuring scarves and warm tones. Harvest festivals mark the
+                abundance of pumpkins and apples, inspiring comforting meals and
+                festive gatherings. Indoors, the ambiance transforms with the
+                soft glow of candles, creating a snug atmosphere. Outdoor
+                activities thrive in the cooler weather, complemented by the
+                sweet aroma of cinnamon and spices. As wildlife prepares for
+                winter, autumn captures a brief, enchanting moment of nature's
+                beauty and change.
+              </p>
+              <button class="read-btn">Read More <i class="fa-solid fa-arrow-right"></i> </button> 
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bg-slider-thumbs">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="/script/swiper-bundle.min.js"></script>
+    <script src="script/script.js"></script>
+  </body>
 </html>

@@ -15,3 +15,116 @@
     --scroll-thub-color: #282f4e;
     --scroll-thumb-hover-color: #454f6b;
   }
+  *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+  body {
+    background: var(--body-bg-color);
+  }
+
+  header{
+    z-index:999;
+    position: fixed;
+    width: 100%;
+    height: calc(5rem + 1rem);
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+  }
+
+  .nav-bar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 200px;
+    position: relative;
+    transition: 0.3s ease;
+  }
+  .nav-close-btn, .nav-menu-btn {
+    display: none;
+  }
+   .logo {
+    color: var(--white-color);
+     letter-spacing: 2px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    text-shadow: var(--text-shadow);
+  }
+  .navigation .nav-items a {
+     color: var(--dark-color);
+     font-size: 1em;
+     text-decoration: none;
+     text-shadow: var(--text-shadow);
+  }
+  .navigation .nav-items a i {
+    display: none;
+  }
+  .navigation .nav-items a:not(:last-child) {
+    margin-right: 35px;
+  }
+  .home {
+    min-height: 100vh;
+  }
+  .bg-slider {
+    position: relative;
+    z-index: 776;
+    width: 100%;
+    height: 100vh;
+  }
+
+  .bg-slider .swiper-slide {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    object-fit: cover;
+    background-size: cover;
+    pointer-events: none;
+  }
+  .swiper-slide .text-content {
+    position: absolute;
+    top: 25%;
+    margin: 0 200px;
+    color: var(--white-color);
+  }
+  .swiper-slide .text-content .title {
+    font-size: 4em;
+    font-weight: 700;
+    margin-bottom: 25px;
+    text-shadow: var(--text-shadow);
+  }
+  .swiper-slide .text-content .title span {
+    font-size: 0.4em;
+    font-weight: 300;
+  }
+  .swiper-slide .text-content p {
+    max-width: 700px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    box-shadow:var(--box-shadow) ;
+    text-shadow: var(--text-shadow);
+    padding: 20px;
+    border-bottom: rgba(255, 255 , 255, 0.1);
+    border-right: rgba(255, 255 , 255, 0.1);
+  }
+  .swiper-slide .text-content .read-btn {
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    background: var(--white-color);
+    padding: 8px 20px;
+    display: flex;
+    align-items: center;
+    font-size: 1em;
+    font-weight: 300;
+    margin-top: 30px;
+    cursor: pointer;
+  }
